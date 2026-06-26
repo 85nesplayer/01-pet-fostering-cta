@@ -1,0 +1,130 @@
+/* Sets a clean base for the full page */
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #e9f6f7;
+}
+
+/* Adds a simple top header for the site name */
+.site-header {
+	padding: 12px 24px;
+	background-color: #0a3a48;
+	border-bottom: 2px solid #ffd447;
+	color: #ffffff;
+}
+
+.site-header h2 {
+	margin: 0;
+	font-size: 24px;
+}
+
+/* Creates a tall, bold banner area for the CTA */
+.cta-banner {
+	position: relative;
+	min-height: 520px;
+	padding: 80px 24px;
+	text-align: center;
+	background-color: #0f4c5c;
+	background-image: url("img/cta-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
+/* Adds a light layer so the image stays subtle and text remains readable */
+.cta-banner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(15, 76, 92, 0.38);
+}
+
+.cta-banner h1,
+.cta-banner p,
+.cta-banner .cta-button {
+	position: relative;
+	z-index: 1;
+}
+
+/* Styles the main headline to stand out clearly */
+.cta-banner h1 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 56px;
+	line-height: 1.15;
+}
+
+/* Keeps supporting text readable and focused */
+.cta-banner p {
+	max-width: 700px;
+	margin: 0 auto 36px;
+	font-size: 21px;
+	line-height: 1.6;
+}
+
+/* Builds a bright, clickable action button */
+.cta-button {
+	display: inline-block;
+	padding: 16px 34px;
+	background-color: #ffd447;
+	color: #0a3a48;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 10px;
+	border: 2px solid #ffe180;
+}
+
+/* Improves button visibility when hovered */
+.cta-button:hover {
+	background-color: #ffe180;
+}
+
+/* Creates a centered section with two equal columns */
+.fostering-info {
+	padding: 56px 24px;
+	background-color: #f3fbfb;
+	text-align: center;
+}
+
+.info-content {
+	max-width: 1000px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.info-column {
+	display: inline-block;
+	width: 46%;
+	margin: 0 2%;
+	vertical-align: middle;
+	font-size: 18px;
+	text-align: left;
+	color: #0a3a48;
+}
+
+.image-column img {
+	width: 100%;
+	max-width: 440px;
+	height: auto;
+	border-radius: 10px;
+	border: 3px solid #d7eef0;
+}
+
+.text-column h3 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 34px;
+	line-height: 1.2;
+	color: #0f4c5c;
+}
+
+.text-column p {
+	margin-top: 0;
+	margin-bottom: 16px;
+	line-height: 1.6;
+}
